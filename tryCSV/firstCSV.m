@@ -1,0 +1,5 @@
+ch1 = ddeinit('excel', 'scope_13.csv');
+T1 = ddereq(ch1, 'r3c1:r2002c1');
+V1 = ddereq(ch1, 'c2r3:r2002c2');
+
+plot(T1, V1);
