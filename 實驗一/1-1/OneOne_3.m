@@ -28,6 +28,6 @@ hold off;
 
 xlabel('Time (s)');  % X 軸標籤
 ylabel('Voltage (V)');  % Y 軸標籤（示波器數據）
-title('Differeniate Square Wave');  
+title('Amplify gain = -3.3');  
 legend('Output', 'Input');  
 grid on;
