@@ -20,7 +20,7 @@ y1 = cleanCSV.Var2; % 第一組信號
 y2 = cleanCSV.Var3; % 第二組信號
 
 y1 = y1 - mean(y1);
-y2 = y2 - mean(y2);
+ y2 = y2 - mean(y2);
 
 e = exp(1)
 
@@ -34,7 +34,7 @@ hold off;
 
 xlabel('Time (s)');  % X 軸標籤
 ylabel('Voltage (V)');  % Y 軸標籤（示波器數據）
-title('Integral Square Wave');  
+title('First Order');  
 legend('Output', 'Input');  
 grid on;
 

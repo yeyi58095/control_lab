@@ -10,8 +10,8 @@ clc;
 csvName = ['scope_14.csv'];
 data = readtable(csvName);
 data_matrix = readmatrix(csvName);
-head(data)
-size(data_matrix)
+head(data);
+size(data_matrix);
 % 讀取數據（假設 firstCSV 是 table 格式）
 cleanCSV = rmmissing(data);  % 刪除含 NaN 的行
 
@@ -22,7 +22,7 @@ y2 = cleanCSV.Var3; % 第二組信號
 y1 = y1 - mean(y1);
 y2 = y2 - mean(y2);
 
-e = exp(1)
+e = exp(1);
 
 figure;
 plot(x, y1, 'b', 'LineWidth', 1.5); % 藍色線代表 Var2
@@ -34,7 +34,7 @@ hold off;
 
 xlabel('Time (s)');  % X 軸標籤
 ylabel('Voltage (V)');  % Y 軸標籤（示波器數據）
-title('Integral Square Wave');  
+title('First Order');  
 legend('Output', 'Input');  
 grid on;
 
