@@ -7,7 +7,7 @@ V1 = ddereq(ch1, 'c2r3:r2002c2');
 plot(T1, V1);
 %}
 clc;
-csvName = ['scope_3.csv'];
+csvName = ['scope_7.csv'];
 data = readtable(csvName);
 data_matrix = readmatrix(csvName);
 head(data);
