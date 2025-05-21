@@ -11,8 +11,8 @@ for f = frequencies
     set_param([model '/Sine Wave'], 'Frequency', num2str(omega));
 
     % 動態設定模擬時間
-    if f > 1
-        simTime = 5;
+    if f >= 1
+        simTime = 2;
     else
         simTime = 10;
     end
